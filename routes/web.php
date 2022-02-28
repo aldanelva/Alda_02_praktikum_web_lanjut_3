@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    echo"Selamat Datang di Halaman Home";
+Route::prefix('category')->group(function(){
+    Route::get('/marbel-edu-games', function(){
+        echo "Ini halaman Marbel Edu Games";
+    });
+    Route::get('/marbel-and-friends-kids-games', function(){
+        echo "Ini halaman Marbel and Friends Kids Games";
+    });
+    Route::get('/riri-story-books', function (){
+        echo "Ini halaman Riri Story Books";
+    });
+    Route::get('/kolak-kids-songs', function(){
+        echo "Ini halaman Kolak Kids Songs";
+    });
 });
