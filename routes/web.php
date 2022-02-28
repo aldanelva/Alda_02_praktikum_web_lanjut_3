@@ -44,4 +44,8 @@ Route::prefix('program')->group(function(){
     });
 });
 
+Route::get('/about-us', function(){
+    return view("aboutus");
+});
+
 
